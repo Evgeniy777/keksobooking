@@ -1,0 +1,24 @@
+{
+  "name": "keksobooking",
+  "version": "1.0.0",
+  "description": "* Студент: [Евгений Левашов](https://up.htmlacademy.ru/nodejs/1/user/142769). * Наставник: [Евгений Сальников](https://htmlacademy.ru/profile/id24537).",
+  "main": "index.js",
+  "scripts": {
+    "test:lint": "eslint .",
+    "test": "npm run test:lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgeniy777/keksobooking.git"
+  },
+  "author": "Evgenii Levashov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgeniy777/keksobooking/issues"
+  },
+  "homepage": "https://github.com/Evgeniy777/keksobooking#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-htmlacademy": "^0.4.2"
+  }
+}
