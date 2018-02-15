@@ -4,7 +4,9 @@ module.exports = {
   execute(commands) {
     console.log(`Комманды`);
     for (let name in commands) {
-      console.log(`--${commands[name].name}: ${commands[name].description}`);
+      if (commands.hasOwnProperty(name)) {
+        console.log(`--${commands[name].name}: ${commands[name].description}`);
+      }
     }
   }
 };
