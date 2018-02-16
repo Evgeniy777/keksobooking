@@ -4,7 +4,7 @@ module.exports = {
   command: `default`,
   execute() {
     console.log(`Привет, пользователь!`);
-    console.log(`Эта программа будет запускать сервер "${projectInfo.name}".`);
-    console.log(`Автор: ${projectInfo.author}`);
+    console.log(`Эта программа будет запускать сервер "${projectInfo.name.zebra}".`);
+    console.log(`Автор: ${projectInfo.author.rainbow}`);
   }
 };
