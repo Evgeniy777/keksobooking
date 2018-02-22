@@ -13,8 +13,8 @@ const generateRandomStringFromArray = (arr) => {
   return arr[generateRandomNumberInRange(0, arr.length - 1)];
 };
 
-const shuffleStringsFromArray = (arr)=> {
-  return arr.sort(() => Math.random() - 0.5);
+const shuffleStringsFromArray = (arr) => {
+  return ([...arr]).sort(() => Math.random() - 0.5);
 };
 
 const location = {
@@ -29,7 +29,7 @@ const generateEntity = () => {
     },
     offer: {
       title: generateRandomStringFromArray(TITLES),
-      address: `{{${location.x}}, {{${location.y}}`,
+      address: `{{${location.x}}}, {{${location.y}}}`,
       price: generateRandomNumberInRange(PRICE.MIN, PRICE.MAX),
       type: generateRandomStringFromArray(TYPE),
       rooms: generateRandomNumberInRange(ROOMS.MIN, ROOMS.MAX),
